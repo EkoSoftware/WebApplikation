@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="grid-container" style="border-radius: 8px;">
+    <div class="grid-box">
+        {% block imagepath %}
+        {% if imagepath %}
+        <div class="grid-container">
+            <img src="{{ imagepath }}" style=" display: grid; ; justify-content: center; " alt="">
+        </div>
+        {% endif %}
+
+
+        {% endblock imagepath %}
+
+
+        {% block app_box %}
+    </div>
+    <form class="container" action="{{ url_for('bmremover') }}" method="POST" enctype="multipart/form-data"
+        style="place-self:end; font-size: larger; margin: 5px">
+        <input name="uploaded-file" type="file" accept=".png,.jpg" class="table-input" action=""
+            style=" font-size: inherit;" placeholder="Enter URL">
+        <input type="submit" value="Generate" class="table-button" style="font-size: inherit; ">
+    </form>
+</div>
+{% endblock app_box %}
+
+</div>
+{% endblock content%}

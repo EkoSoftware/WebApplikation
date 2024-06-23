@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="grid-container" style="border-radius: 8px;">
+    <div class="grid-box">
+        {% block imagepath %}
+        {% if imagepath %}
+        <div class="grid-container">
+            <img src="{{ imagepath }}" style=" display: grid; place-self:center; justify-content: center; " alt="">
+        </div>
+        {% else %}
+        <div class="grid-container">
+            <img src="static/images/nedladdning.png"
+                style=" display: grid; place-self:center; justify-content: center; " alt="">
+        </div>
+        {% endif %}
+
+
+        {% endblock imagepath %}
+
+
+        {% block app_box %}
+    </div>
+    <form class="container" action="{{ url_for('qr') }}" method="post" style="font-size: larger; margin: 5px">
+        <input name="userinput" type="text" class="table-input" action="" style=" font-size: inherit;"
+            placeholder="Enter URL">
+        <input type="submit" value="Generate" class="table-button" style="font-size: inherit; ">
+    </form>
+</div>
+{% endblock app_box %}
+
+</div>
+{% endblock content%}

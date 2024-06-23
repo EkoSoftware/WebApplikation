@@ -1,0 +1,95 @@
+html {
+    font: italic 1.2rem "Fira Sans", serif;
+}
+
+body {
+    background-color: #6565654e;
+    font: italic 1.2rem "Fira Sans", serif;
+}
+
+div {
+    font: italic 1.2rem "Fira Sans", serif;
+}
+
+button {
+    display: grid;
+    background-color: #d0d0d083;
+    border-radius: 16px;
+}
+
+.grid-container {
+    background-color: #65656589;
+    display: grid;
+    place-self: center;
+    min-width: 400px;
+    min-height: 200px;
+}
+
+.grid-box {
+    margin: 8px;
+    display: grid;
+    place-self: left;
+}
+
+.table-input {
+    display: table-cell;
+    border: 2px solid rgba(45, 170, 174, 0.156);
+    border-radius: 8px;
+}
+
+.table-button {
+    display: table-cell;
+    border: 2px solid rgba(45, 170, 174, 0.156);
+    border-radius: 8px;
+
+}
+
+.flex-row {
+    font-size: larger;
+    border-style: solid;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.flex-item {
+    align-items: center;
+    float: inline-start;
+    border-right: 1px solid #bbb;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* justify-content: flex-start; */
+}
+
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.active:hover {
+    background-color: #007a4d;
+}
